@@ -31,7 +31,7 @@ class LoginActivity2 : AppCompatActivity() {
             val password = binding.password.text.toString().trim()
 
             if (email.isNotEmpty()&&password.isNotEmpty()){
-                firebaseAuth.createUserWithEmailAndPassword(email, password)
+                firebaseAuth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this){ task ->
                         if (task.isSuccessful){
                             Toast.makeText(this, "Login is Successful", Toast.LENGTH_SHORT).show()

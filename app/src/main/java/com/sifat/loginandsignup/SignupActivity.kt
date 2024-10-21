@@ -35,8 +35,8 @@ class SignupActivity : AppCompatActivity() {
                     .addOnCompleteListener(this){ task ->
                         if (task.isSuccessful){
                             Toast.makeText(this, "Your Signup Successful", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this, LoginActivity2::class.java)
-                            startActivity(intent)
+                        val intents = Intent(this, LoginActivity2::class.java)
+                            startActivity(intents)
                             finish()
                         }else{
                             Toast.makeText(this, "Your Signup Unsuccessful", Toast.LENGTH_SHORT).show()
