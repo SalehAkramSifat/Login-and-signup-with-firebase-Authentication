@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "314581493424",
+    "project_id": "login-and-signup-51915",
+    "storage_bucket": "login-and-signup-51915.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314581493424:android:f930c4f23552c9231dbd75",
+        "android_client_info": {
+          "package_name": "com.sifat.loginandsignup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR7-g5htE8Xvi-K4PNosQss8VqBHyKjTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
