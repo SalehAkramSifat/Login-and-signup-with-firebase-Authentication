@@ -35,16 +35,18 @@ class LoginActivity2 : AppCompatActivity() {
             val password = binding.password.text.toString().trim()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
-                if (isValidEmail(email)) {
+                if (isValidEmail(email) && isValidPassword(password)) {
                     loginUser(email, password)
                 } else {
-                    Toast.makeText(this, "Enter Correct email", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Enter Correct email/Password", Toast.LENGTH_SHORT).show()
                 }
             } else {
                 Toast.makeText(this, "Enter email/password", Toast.LENGTH_SHORT).show()
             }
         }
     }
+
+
 
     private fun loginUser(email: String, password: String) {
         progressBar.visibility = View.VISIBLE
@@ -66,4 +68,8 @@ class LoginActivity2 : AppCompatActivity() {
     private fun isValidEmail(email: String): Boolean {
         return Patterns.EMAIL_ADDRESS.matcher(email).matches()
     }
+    private fun isValidPassword(password: String): Boolean {
+        return password.length >= 6
+    }
+
 }
